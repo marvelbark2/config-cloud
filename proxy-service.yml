@@ -11,6 +11,7 @@ spring:
         - id: product-service
           uri: http://localhost:8080/
           predicates:
-            - Path: /**
+            - Path: /user**
+            - Path: /all
   main:
     web-application-type: reactive
