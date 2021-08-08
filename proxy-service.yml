@@ -8,7 +8,9 @@ spring:
   cloud:
     gateway:
       routes:
-        - id: r1
+        - id: product-service
           uri: http://localhost:8080/
+          predicates:
+            - Path: /**
   main:
     web-application-type: reactive
