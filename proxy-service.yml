@@ -10,6 +10,7 @@ spring:
       routes:
         - id: r1
           uri: http://localhost:8080/
+
           predicates:
             - Path= /user/**
   main:
